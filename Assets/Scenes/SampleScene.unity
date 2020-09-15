@@ -133,8 +133,9 @@ GameObject:
   - component: {fileID: 148900240}
   - component: {fileID: 148900239}
   - component: {fileID: 148900242}
+  - component: {fileID: 148900243}
   m_Layer: 0
-  m_Name: Dinossauro_0
+  m_Name: Dinossauro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +156,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -273,6 +274,23 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.47}
       - {x: 0.14999999, y: -0.38}
       - {x: 0.22131261, y: -0.08330379}
+--- !u!114 &148900243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148900238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4fcb9ec64cf6d84bb0109c976771adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 148900239}
+  forcaPulo: 800
+  layerChao:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +385,7 @@ GameObject:
   - component: {fileID: 1962380736}
   - component: {fileID: 1962380735}
   - component: {fileID: 1962380737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +469,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.04019761}
+  m_Offset: {x: 0, y: -0.048431635}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -462,5 +480,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.41, y: 0.18182158}
+  m_Size: {x: 24.41, y: 0.16535354}
   m_EdgeRadius: 0
